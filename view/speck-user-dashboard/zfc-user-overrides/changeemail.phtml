@@ -1,0 +1,10 @@
+<div class="tabnav">
+    <ul class="tabnav-tabs">
+        <li><a class="tabnav-tab" href="<?=$this->url('zfcuser')?>">Account Information</a></li>
+        <li><a class="tabnav-tab" href="<?=$this->url('zfcuser/addresses')?>">Address Book</a></li>
+        <li><a class="tabnav-tab selected" href="<?=$this->url('zfcuser/changeemail')?>">Change Email</a></li>
+        <li><a class="tabnav-tab" href="<?=$this->url('zfcuser/changepassword')?>">Change Password</a></li>
+    </ul>
+</div>
+
+<?=$this->partial('zfc-user/user/changeemail', $this->vars());?>
