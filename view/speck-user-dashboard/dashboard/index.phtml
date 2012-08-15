@@ -7,5 +7,19 @@
     </ul>
 </div>
 
-<?=$this->partial('speck-user-dashboard/dashboard/partial/info-tab',
-    array('user' => $this->zfcUserIdentity())); ?>
+The following is your account info. This includes your account login (your email address) and billing information.
+<div class="dashboard-content">
+<dl>
+    <dt>Account Login:</dt>
+    <dd><?=$this->zfcUserIdentity()->getEmail()?></dd>
+
+    <dt>Account Number:</dt>
+    <dd><?=$this->zfcUserIdentity()->getId()?></d>
+
+    <dt>Billing Name:</dt>
+    <dd>???</dd>
+
+    <dt>Default Billing Address:</dt>
+    <dd>???</dd>
+</dl>
+</div>
